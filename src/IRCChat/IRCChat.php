@@ -10,7 +10,6 @@ use pocketmine\Player;
 use pocketmine\OfflinePlayer;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
 class IRCChat implements Plugin{
