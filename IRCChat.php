@@ -1,38 +1,17 @@
 <?php
 
-/*
-__PocketMine Plugin__
-name=IRCChat
-description=Connects to an IRC channel to act as a bridge for the server chat.
-version=0.4.1
-author=shoghicp
-class=IRCChat
-apiversion=6,7,8,9,10,11,12
-*/
+namespace IRCChat;
 
-/*
-
-Small Changelog
-===============
-
-0.1:
-- PocketMine-MP Alpha_1.3dev release
-
-0.2:
-- Added the IRC pass sub-command to run commands as the real Console.
-
-0.3:
-- Removed NOTICE from chat broadcast
-- Added Player join
-
-0.4:
-- Channel OPs can now easily ban/mute IRCChat bots
-- PocketMine-MP Alpha_1.3.11dev support
-
-0.4.1
-- Alpha_1.3.12 support
-
-*/
+use pocketmine\plugin\PluginBase;
+use pocketmine\command\CommandExecutor;
+use pocketmine\utils\Config;
+use pocketmine\Server;
+use pocketmine\Player;
+use pocketmine\OfflinePlayer;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\utils\Config;
+use pocketmine\utils\TextFormat;
 
 class IRCChat implements Plugin{
 	private $config, $api, $socket, $thread;
