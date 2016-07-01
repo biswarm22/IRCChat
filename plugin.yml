@@ -4,4 +4,4 @@ version: 0.4.1
 author: shoghicp
 class: IRCChat
 api: 2.0.0
-main: shoghip\IRCChat
+main: IRCChat\IRCChat
